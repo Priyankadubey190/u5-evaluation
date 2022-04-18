@@ -19,7 +19,11 @@ function App() {
   const handlebal = (value)=>{
     setive({...ive,bal:ive.bal+value});
   }
-
+  function win(sc){
+   if(sc>100){
+     return "India Won";
+   }
+  }
   return (
     <div className="App">
       <h3>India:</h3>
@@ -46,13 +50,14 @@ function App() {
         <div>
           Over:{" "}
           <h1 className="overCount">
-            {/* var x = ({inv.bal}).split(".") 
-            if(x[1]===5){} */}
+            
             {
               // Show Over here in the format: "over.ball" eg: 4.5 means 4th over and 5th ball
               // if 1 more ball is thrown then over is now 5.0
               // you have to write logic to form this string from current ball number.
-
+              
+                ive.bal
+              
             }
           </h1>
         </div>
@@ -75,16 +80,21 @@ function App() {
       <div className="addBall">
         Add ball
         {/* Increase the total number of balls thrown here. */}
+        {/* if(({ive.bal})===6){
+          var over = 1;
+        }{i} */}
         <button onClick={()=>{handlebal(1)}}>Add 1</button>
       </div>
 
       {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */}
-      let x = {ive.sc}
+      {/* let x = {ive.sc} */}
       {/* if(x>=100){
         <h1>India Win</h1>
       } */}
+     <h2>{win(ive.sc)}</h2>
     </div>
   );
+  
 }
 
 export default App;
