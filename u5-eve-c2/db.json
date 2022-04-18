@@ -1,0 +1,26 @@
+{
+  "students": [
+    {
+      "first_name": "Priyanka",
+      "last_name": "Dubey",
+      "email": "priyankadubey0811@gmail.com",
+      "gender": "female",
+      "age": "23",
+      "tenth_score": "99",
+      "twelth_score": "98",
+      "preferred_branch": "science",
+      "id": 1
+    },
+    {
+      "first_name": "Priyanka",
+      "last_name": "Dubey",
+      "email": "priyankadubey0811@gmail.com",
+      "gender": "female",
+      "age": "23",
+      "tenth_score": "99",
+      "twelth_score": "98",
+      "preferred_branch": "science",
+      "id": 2
+    }
+  ]
+}
