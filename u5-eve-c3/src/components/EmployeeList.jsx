@@ -10,7 +10,7 @@ export const EmployeeList = () => {
 
   }, []);
   console.log(mydata);
-
+  var x = mydata.length;
   return (
     <div className="list_container">
       {/* On clicking this card anywhere, user goes to user details */}
